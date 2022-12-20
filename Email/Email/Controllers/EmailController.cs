@@ -7,11 +7,11 @@ namespace Email.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Email : ControllerBase
+    public class EmailController : ControllerBase
     {
         private readonly IEmailService _emailService;
 
-        public Email(IEmailService emailService)
+        public EmailController(IEmailService emailService)
         {
            _emailService = emailService;
         }
